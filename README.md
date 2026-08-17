@@ -72,8 +72,13 @@ gestion-proyectos-techsolutions/
 │   ├── Models/
 │   │   ├── Proyecto.php           # Modelo de datos de proyectos
 │   │   └── User.php               # Modelo de usuario
-│   └── Services/
-│       └── ProyectoService.php    # Lógica de negocio
+│   ├── Providers/
+│   │   └── AppServiceProvider.php # Proveedor de servicios de la app
+│   ├── Services/
+│   │   ├── ProyectoService.php    # Lógica de negocio de proyectos
+│   │   └── IndicadorEconomicoService.php # Servicio de indicadores económicos (UF)
+│   └── View/Components/
+│       └── ValorUfDelDia.php      # Componente Blade para la UF del día
 ├── resources/
 │   ├── views/
 │   │   ├── layouts/
@@ -84,6 +89,8 @@ gestion-proyectos-techsolutions/
 │   │   │   ├── editar-proyecto.blade.php
 │   │   │   ├── eliminar-proyecto.blade.php
 │   │   │   └── detalle-proyecto.blade.php
+│   │   ├── components/
+│   │   │   └── valor-uf-del-dia.blade.php
 │   │   └── welcome.blade.php
 │   ├── css/
 │   │   └── app.css                # Estilos CSS
@@ -254,4 +261,4 @@ CACHE_STORE=database
 
 ---
 
-**Última actualización**: Julio 2026
+**Última actualización**: Agosto 2026
